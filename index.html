@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather-container">
+      <div class="search-box">
+        <img
+          class="location-icon"
+          src="images/location-pin-2.png"
+          alt="location-icon"
+        />
+        <input type="text" class="city-input" placeholder="Enter city name" />
+        <img class="search-icon" src="images/search.png" alt="search-icon" />
+      </div>
+      <div class="information-box unvisible">
+        <div class="weather-info-box">
+          <img
+            class="weather-img"
+            src="images/cloudy-day.svg"
+            alt="weather-image"
+          />
+          <h1>0°C</h1>
+          <h2 class="weather-desc">Cloudy</h2>
+        </div>
+        <div class="weather-details">
+          <div class="humidity-box">
+            <img src="images/humidity-2.png" alt="humidity-icon" />
+            <div>
+              <h3 class="humidity-info">0%</h3>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="wind-box">
+            <img src="images/wind_icon.png" alt="wind-icon" />
+            <div>
+              <h3 class="wind-info">0Km/h</h3>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="error-container unvisible">
+        <div class="error-box">
+          <img src="images/404.png" alt="404-icon" />
+          <p>Ooops! Location not found!</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
